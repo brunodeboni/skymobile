@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
 <body>
 <!-- Declaração do formulário -->  
@@ -13,18 +14,18 @@
       
     <!-- Itens do pagamento (ao menos um item é obrigatório) -->
     <span>Licença:</span>   
-    <select name="itemDescription1">
+    <select id="licenca" name="itemDescription1">
     	<option value="">Selecione...</option>
     	<option value="Licença por Usuário">Licença por Usuário</option>
     	<option value="Licença Ilimitada">Licença Ilimitada</option>
-    </select>
-    <input type="text" name="itemDescription1" value="Instalação SIGMA Android"><br>  
+    </select><br>
     
     <span>Quantidade:</span>
-    <input type="text" name="itemQuantity1" value="1"> 
+    <input type="text" name="itemQuantity1" id="quantidade" value="1"><br>
     
     <span>Valor:</span>
-    <input type="text" name="itemAmount1" value="500.00"><br>
+    <div id="valor">Instalação: R$ 500,00</div>
+    <input type="hidden" id="itemAmount1" name="itemAmount1" id="itemAmount1" value="500.00"><br>
     
       
     <!-- Código de referência do pagamento no seu sistema (opcional)   
@@ -48,10 +49,39 @@
     <input type="hidden" name="senderEmail" value="comprador@uol.com.br">  
       -->
     <!-- submit do form (obrigatório) -->  
-    <input type="image" name="submit"   
-    src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif"   
-    alt="Pague com PagSeguro">  
-      
-</form> 
+    <button id="btn">Comprar licença</button> 
+  
+</form>
+
+<script>
+
+$('#licenca').change(function() {
+	if ($(this).val() == "Licença por Usuário") {
+		var quantidade = $('#quantidade').val();
+		var valor_licenca = quantidade * 5;
+		var total = valor_licenca + 500;
+		$('#valor').html('Instalação: R$ 500,00 + Licença para '+ quantidade +' Usuário(s): R$ '+ valor_licenca +',00 = R$ '+ total +',00');
+
+		$('#itemAmount1').val(total+'.00');
+	}
+	if ($(this).val() == "Licença Ilimitada") {
+		$('#valor').html('Instalação: R$ 500,00 + Licença Ilimitada: R$ 250,00 = R$ 750,00');
+		$('#itemAmount1').val('750.00');
+	}
+});
+
+$('#quantidade').blur(function() {
+	if ($('#licenca').val() == "Licença por Usuário") {
+		var quantidade = $('#quantidade').val();
+		var valor_licenca = quantidade * 5;
+		var total = valor_licenca + 500;
+		$('#valor').html('Instalação: R$ 500,00 + Licença para '+ quantidade +' Usuário(s): R$ '+ valor_licenca +',00 = R$ '+ total +',00');
+
+		$('#itemAmount1').val(total+'.00');
+	}
+});
+
+</script>
+
 </body> 
 </html>

@@ -215,7 +215,7 @@ function validarCNPJ(cnpj) {
            
     return true;
     
-});
+}
 
 </script>
 

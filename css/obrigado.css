@@ -1,0 +1,44 @@
+#container {
+	height: 450px;
+}
+
+#obrigado {
+	position: absolute;
+	top: 80px;
+	margin-top: 50px;
+	margin-left: 250px;
+	width: 400px;
+	background: #DCF0C7;
+	color: #0099DD;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+#btn{
+	text-decoration: none;
+	padding: 5px 20px;
+	width: 100px;
+	background: #E37002;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 15px;
+	border: 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+}
+
+
+#footer {
+	position: absolute;
+	top: 450px;
+	z-index: 2;
+	width: 1000px;
+	height: 200px;
+	background: #D5E2E5;
+}

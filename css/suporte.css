@@ -1,0 +1,153 @@
+#container {
+	height: 950px;
+}
+
+/*Conteúdo*/
+#boxes-wrapper {
+	position: absolute;
+	top: 80px;
+	width: 1000px;
+	
+}
+
+/* Caixa da esquerda */
+#left-wrapper {
+	position: absolute;
+	top: 30px;
+	width: 550px;
+	float: left;
+	height: 600px;
+}
+/* FAQ */
+#faq {
+	margin: 0 10px 0 0;
+	height: 500px;
+}
+#faq-title {
+	padding: 30px 0 30px 30px;
+	width: 510px;
+	background: #6AC334;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+#faq-content {
+	margin: 0;
+	height: 400px;
+	background: #DCF0C7;
+	border: 1px solid #DCF0C7;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.faq-questions {
+	margin: 1px;
+	width: 506px;
+	padding: 15px;
+	background: #FFF;
+}
+.faq-questions a {
+	color: #0099DD;
+	text-decoration: none;
+}
+.faq-questions a:hover {
+	color: #00BFFF;	
+}
+#veja-mais {
+	text-align: right;
+	margin-right: 10px;
+}
+#veja-mais a {
+	text-decoration: none;
+	color: #0099DD;
+}
+#veja-mais a:hover {
+	text-decoration: none;
+	color: #00BFFF;
+}
+
+/* Botões de Suporte */
+#botoes {
+	margin: 15px 15px 10px 15px;
+	width: 500px;
+	height: 30px;
+}
+#ticket {
+	float: left;
+}
+#chat {
+	float: right;
+}
+.btn {
+	margin: auto;
+	padding: 10px 30px;
+	width: 100px;
+	background: #E37002;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+}
+
+/* Caixa da direita */
+#right-wrapper {
+	position: absolute;
+	top: 30px;
+	left: 550px;
+	width: 450px;
+	float: right;
+	height: 560px;
+}
+/* PDF */
+#pdf-box {
+	width: 450px;
+	height: 100px;
+	background: #DCF0C7;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#pdf-box img {
+	margin: 20px 15px 20px 85px;
+}
+#pdf-box a {
+	float: left;
+}
+#pdf-box a span {
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	color: #24211D;
+	font-weight: bold;
+	float: right;
+}
+/* Vídeo */
+#video-box {
+	margin-top: 10px;
+	width: 450px;
+	height: 450px;
+	background: #DCF0C7;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#txt {
+	padding: 20px;
+	color: #24211D;
+	font-weight: bold;
+}
+
+
+/* Rodapé */
+#footer {
+	position: absolute;
+	top: 750px;
+	z-index: 2;
+	width: 1000px;
+	height: 200px;
+	background: #D5E2E5;
+}

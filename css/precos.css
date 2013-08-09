@@ -1,0 +1,178 @@
+#container {
+	height: 1650px;
+}
+
+#chamada {
+	position: absolute;
+	top: 650px;
+	width: 1000px;
+}
+
+#chamada p {
+	margin: auto;
+	width: 750px;
+	text-align: center;
+	color: #24211D;
+	font-size: 18px;
+    font-weight: bold;
+}
+#chamada a {
+	font-size: 18px;
+	color: #E37002;
+}
+
+#precos-wrapper {
+    position: absolute;
+	top: 720px;
+    width: 1000px;
+    height: 460px;
+    background: #FFF;
+}
+
+#preco-instalacao {
+    background: #DCF0C7;
+    padding: 20px 40px;
+    width: 460px;
+    height: 50px;
+    margin: 40px auto 0 auto;
+    color: #24211D;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#preco-instalacao-texto {
+    width: 220px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#preco-instalacao-valor {
+    width: 230px;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#mais {
+    clear: both;
+    margin: 20px auto 0 auto;
+    color: #8C8F93;
+    font-size: 50px;
+    width: 30px;
+    height: 60px;
+}
+
+#preco-assinatura {
+    margin: 20px auto 0 auto;
+    width: 800px;
+    height: 230px;
+}
+
+#preco-assinatura-usuario {
+    float: left;
+    width: 350px;
+}
+
+#preco-assinatura-ilimitada {
+    float: right;
+    width: 350px;
+}
+
+.preco-assinatura-header {
+    width: 300px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background: #6AC334;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.preco-assinatura-h {
+    font-size: 18px;
+}
+
+.preco-assinatura-content {
+    margin: -10px auto 0 auto;
+    padding: 20px 10px;
+    width: 300px;
+    background: #DCF0C7;
+    color: #24211D;
+    font-weight: bold;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#ou {
+    position: absolute;
+    top: 300px;
+    left: 470px;
+    color: #8C8F93;
+    font-size: 50px;
+    width: 30px;
+    height: 60px;
+}
+.comprar{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.btn-comprar {
+	margin: auto;
+	padding: 5px 20px;
+	width: 100px;
+	background: #E37002;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+}
+
+#pagamento-wrapper {
+	position: absolute;
+	top: 1230px;
+	width: 1000px;
+	color: #24211D;
+}
+#pagamento-wrapper a {
+	color: #E37002;
+	font-weight: bold;
+}
+#forma-pagamento {
+	width: 500px;
+	float: left;
+}
+#processo-compra {
+	width: 500px;
+	float: right;
+}
+.pagamento-header {
+	background: #E7ECF3;
+	width: 430px;
+	padding: 5px 0 5px 20px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.pagamento-texto {
+	width: 430px;
+	padding: 10px 20px;
+	line-height: 22px;
+}
+
+#footer {
+	position: absolute;
+	top: 1450px;
+	z-index: 2;
+	width: 1000px;
+	height: 200px;
+	background: #D5E2E5;
+}
